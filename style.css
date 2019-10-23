@@ -1,0 +1,567 @@
+body {
+  margin: 0;
+  padding: 0;
+  color: #444;
+  line-height: 150%;
+}
+h1,h2,h3,h4,h5,h6,p {
+  margin: 0;
+  padding: 0;
+}
+
+/*====================
+  リンク
+====================*/
+
+a,
+a:active,
+a:focus {
+  color: #b6a489;
+}
+a:hover {
+  text-decoration: none;
+}
+
+/*====================
+  フォント
+====================*/
+
+.num {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/*====================
+  ヘッダー
+====================*/
+
+header {
+  width: 100%;
+  height: 120px;
+  background: #fff;
+}
+
+header h1 {
+  margin: 0;
+  padding-left: 60px;
+  text-align: center;
+  font-size: 30px;
+  display: flex;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 120px;
+}
+
+/*====================
+  ナビゲーション
+====================*/
+
+nav a {
+  margin:0 10px;
+  display: inline-block;
+  border-radius: 5%;
+  font-size: 20px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 12px 12px;
+  background: #5dd9ff;
+  color: #ffffff;
+  line-height: 1em;
+  transition: .3s;
+  border: 2px solid #5dd9ff;
+}
+
+nav a:hover {
+  color: #5dd9ff;
+  background: #ffffff;
+}
+
+#top-nav ul {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0;
+  width: 300px;
+  height: 120px;
+  display: flex;
+  list-style: none;
+  line-height: 120px;
+}
+
+/*====================
+  検索バー
+====================*/
+
+#searchbar {
+  width: 100%;
+  height: 100px;
+  line-height: 100px;
+  margin-top: 0;
+}
+
+#searchbar form {
+  font-size: 10px;
+  display: flex;
+  justify-content: space-around;
+  padding-right: 50px;
+}
+
+.search {
+  display: flex;
+}
+
+.search h1 {
+  margin-left: 100px;
+}
+
+.search::after {
+  content: '';
+  width: 6px;
+  height: 6px;
+  border: 0px;
+  border-bottom: solid 2px #b4b3b3;
+  border-right: solid 2px #b4b3b3;
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  margin-top: -4px;
+}
+.search select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 40px;
+  background: #fff;
+  position: relative;
+  z-index: 1;
+  padding: 0 40px 0 10px;
+  border: 1px solid #b4b3b3;
+  border-radius: 2px;
+}
+.search select::-ms-expand {
+    display: none;
+}
+
+/*====================
+  レイアウト
+====================*/
+
+.site-width {
+  margin: 0 auto;
+  width: 100%;
+}
+
+#main {
+  min-height: 800px;
+}
+
+section h1.title {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#contents {
+  margin: 0 auto;
+  background: #e0e0e0;
+}
+
+.page-title {
+  margin-bottom: 40px;
+  padding-top: 40px;
+  text-align: center;
+  font-size: 32px;
+}
+
+.button {
+  margin: 30px 10px;
+  height: 40px;
+  display: inline-block;
+  border-radius: 5%;
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer;
+  background: #fff;
+  color: #5dd9ff;
+  line-height: 1em;
+  transition: .3s;
+  border: 2px solid #5dd9ff;
+}
+
+.button:hover {
+  color: #fff;
+  background: #5dd9ff;
+}
+
+.delete {
+  margin: 30px;
+  padding: 10px 20px;
+  height: 50px;
+  display: inline-block;
+  border-radius: 5%;
+  font-size: 25px;
+  text-align: center;
+  cursor: pointer;
+  background: #fff;
+  color: #ff5d5d;
+  line-height: 1em;
+  transition: .3s;
+  border: 2px solid #ff5d5d;
+}
+
+.delete:hover {
+  color: #fff;
+  background: #ff5d5d;
+}
+
+.register {
+  margin: 30px 10px;
+  padding: 10px 20px;
+  height: 50px;
+  display: inline-block;
+  border-radius: 5%;
+  font-size: 25px;
+  text-align: center;
+  cursor: pointer;
+  background: #fff;
+  color: #5dd9ff;
+  line-height: 1em;
+  transition: .3s;
+  border: 2px solid #5dd9ff;
+}
+
+.register:hover {
+  color: #fff;
+  background: #5dd9ff;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+}
+
+.img-container {
+  margin-bottom: 15px;
+  width: 100%;
+  height: 370px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-container img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.img-container .img-main {
+  width: 50%;
+  height: 370px;
+  text-align: center;
+}
+
+.btn-container a {
+  margin: 30px;
+  padding: 10px 20px;
+  display: inline-block;
+  border-radius: 5%;
+  font-size: 25px;
+  text-align: center;
+  cursor: pointer;
+  background: #fff;
+  color: #5dd9ff;
+  line-height: 1em;
+  transition: .3s;
+  border: 2px solid #5dd9ff;
+  text-decoration: none;
+}
+
+.btn-container a:hover {
+  color: #fff;
+  background: #5dd9ff;
+}
+
+.birth {
+  display: flex;
+  justify-content: space-around;
+}
+
+form .birth select {
+  width: 32%;
+}
+
+/*====================
+  フッター
+====================*/
+
+footer {
+  padding: 15px 0;
+  width: 100%;
+  background: #333;
+  color: #f6f5f5;
+  text-align: center;
+  font-size: 15px;
+}
+
+/*====================
+  ページネーション
+====================*/
+
+.pagination {
+  position: relative;
+  overflow: hidden;
+}
+
+.pagination-list {
+  position: relative;
+  left: 50%;
+  float: left;
+  padding-left: 0;
+  list-style: none;
+}
+
+.pagination .list-item {
+  position: relative;
+  left: -50%;
+  float: left;
+  margin-right: 5px;
+}
+
+.pagination .list-item:last-child {
+  margin-right: 0;
+}
+
+.pagination .list-item a {
+  display: block;
+  padding: 5px 10px;
+  background: #eee;
+  color: black;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.pagination .list-item.active a {
+  background: #333;
+  color: white;
+}
+
+.pagination .list-item a:hover {
+  background: #333;
+  color: white;
+}
+
+/*====================
+  件数表示
+====================*/
+
+.records_title {
+  margin:0 auto;
+  padding: 5px;
+  width: 95%;
+  height: 40px;
+  line-height: 40px;
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid #fff;
+
+}
+
+.records_title .total_num {
+  padding-right: 5px;
+  font-weight: bold;
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.records_left {
+  margin-left: 10px;
+}
+
+.records_right {
+  margin-right: 10px;
+}
+
+/*====================
+  リスト
+====================*/
+
+.panel {
+  width: 95%;
+  height: 50px;
+  margin: 0 auto;
+  padding: 5px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid #fff;
+  background: #fff;
+}
+
+.panel p {
+  width: 20%;
+}
+
+.panel p:first-child {
+  margin-left: 10px;
+}
+
+.panel a {
+  margin:0 10px;
+  display: inline-block;
+  border-radius: 5%;
+  font-size: 17px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 10px 12px;
+  background: #ffffff;
+  color: #5dd9ff;
+  line-height: 1em;
+  transition: .3s;
+  border: 2px solid #5dd9ff;
+}
+
+.panel a:hover {
+  color: #ffffff;
+  background: #5dd9ff;
+}
+
+.panel_button {
+  margin-left: auto;
+  margin-right: 10px;
+}
+
+.panel_index {
+  display: flex;
+  align-items: center;
+  width: 95%;
+  height: 50px;
+  margin: 0 auto;
+}
+
+.panel_index p {
+  width: 20%;
+}
+
+.panel_index p:first-child {
+  margin-left: 10px;
+}
+
+/*====================
+  フォーム
+====================*/
+
+label {
+  display: block;
+}
+
+label.err input, label.err select {
+  background: #f7dcd9;
+}
+
+input[type="text"], input[type="password"], input[type="number"], .form select, textarea, .detail {
+  display: block;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+  padding: 10px;
+  width: 100%;
+  height: 50px;
+  border: none;
+  background: #f6f5f5;
+  font-size: 18px;
+}
+
+input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  background: #f6f5f5;
+  vertical-align: middle;
+}
+
+input[type="number"] {
+  width: 100px;
+  text-align: left;
+}
+
+input[type="radio"] {
+  margin-left: 30px;
+  margin-right: 10px;
+}
+
+input["type="submit] {
+  margin: 15px 0;
+  padding: 15px 30px;
+  width: 100%;
+  border: none;
+  background: #333;
+  color: #fff;
+  font-size: 14px;
+}
+
+select:hover, input[type="submit"]:hover {
+  cursor: pointer;
+}
+
+.form-container {
+  margin: 0 auto;
+  width: 50%;
+}
+
+.form {
+  margin: 0 auto;
+  padding: 30px;
+  border: 5px solid #f1f1f1;
+}
+
+.form .area-msg {
+  padding: 0 0 15px 0;
+  color: red;
+}
+
+.form .area-drop {
+  margin-bottom: 15px;
+  width: 50%;
+  height: 140px;
+  background: #f6f5f4;
+  color: #ccc;
+  text-align: center;
+  line-height: 150px;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.form .input-file {
+  opacity: 0;
+  width: 90%;
+  height: 140px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.form .prev-img {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.form .imgDrop-container {
+  width: 33.333%;
+  padding-right: 15px;
+  box-sizing: border-box;
+}
+
+.form .counter-text {
+  text-align: right;
+}
+
+#js-count {
+  height: 250px;
+}
